@@ -15,7 +15,7 @@ const createUser = async (user: User) => {
     options: {
       data: {
         ten: user.hoten,
-        role: "user1", //admin cập nhật role sau //user=>staff, user1=>customer
+        role: "admin", //admin cập nhật role sau //user=>staff, user1=>customer
         sdt: user.sdt,
       },
     },

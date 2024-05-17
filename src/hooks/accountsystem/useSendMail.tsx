@@ -3,7 +3,7 @@ import supabase from "../../app/supabase";
 
 const sendmail = async (mail: string) => {
   const { error } = await supabase.auth.resetPasswordForEmail(mail, {
-    redirectTo: "http://localhost:3000/reset-password",
+    redirectTo: "https://4travel.netlify.app/reset-password",
   });
   {
     /*phai save url vao pj supabase*/
